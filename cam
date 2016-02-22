@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DATE=$(date +"%Y-%m-%d_%H_%M_%S")
+
+for i in 1 2 3
+do
+fswebcam -r 640x480 --no-banner /home/pi/images/$DATE$i.jpg
+echo { '"'date'"' : '"'$DATE$i'"' } > /home/pi/images/current.json
+sleep 15
+done

@@ -1,0 +1,18 @@
+{
+  "name": "webcam",
+  "version": "0.0.5",
+  "description": "RPi webcam to transmit images over wifi or ethernet network surveilance purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RPi"
+  ],
+  "dependencies":{
+ 	"socket.io" : ">0.0.0" ,
+	"express" : ">0.0.0"
+  },
+  "author": "Abhisek Panda",
+  "license": "MIT"
+}
